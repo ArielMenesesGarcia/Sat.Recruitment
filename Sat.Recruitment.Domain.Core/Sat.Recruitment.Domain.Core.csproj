@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sat.Recruitment.Domain.Entity\Sat.Recruitment.Domain.Entity.csproj" />
+    <ProjectReference Include="..\Sat.Recruitment.Domain.Interface\Sat.Recruitment.Domain.Interface.csproj" />
+    <ProjectReference Include="..\Sat.Recruitment.Infrastructure.Repository\Sat.Recruitment.Infrastructure.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
