@@ -12,9 +12,9 @@ namespace Sat.Recruitment.Domain.Core
         private readonly IUserRepository _userRepository;
         private readonly IUserOperationsDomain _userOperations;
 
-        public UserDomain(IUserRepository userRepository, IUserOperationsDomain userOperations)
+        public UserDomain(IUnitOfWork unit , IUserOperationsDomain userOperations)
         {
-            _userRepository = userRepository;
+            _userRepository = unit.UserRepository;
             _userOperations = userOperations;
         }
 

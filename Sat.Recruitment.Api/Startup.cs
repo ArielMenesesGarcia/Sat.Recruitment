@@ -59,6 +59,7 @@ namespace Sat.Recruitment.Api
             services.AddScoped<IUserDomain, UserDomain>();
             services.AddScoped<IUserRepository,UserRepository>();
             services.AddSingleton<IUserOperationsDomain,UserOperationsDomain>();
+            services.AddScoped<IUnitOfWork,UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
